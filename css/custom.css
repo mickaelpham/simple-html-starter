@@ -1,0 +1,66 @@
+body {
+  background-color: #eee;
+}
+
+/* Fixing box model */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #fff;
+  margin: auto;
+  padding: 1em 2em;
+}
+
+#search-input {
+  width: 50%;
+}
+
+/* First generation smartphones
+----------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+  #search-input {
+    width: 100%;
+  }
+}
+
+/* High-end smartphones
+----------------------------------------------------------------------------- */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  #search-input {
+    width: 80%;
+  }
+}
+
+/* Tablets
+----------------------------------------------------------------------------- */
+@media (min-width: 769px) and (max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+}
+
+/* Landscape tablets and netbooks
+----------------------------------------------------------------------------- */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    width: 900px;
+  }
+}
+
+/* Desktops
+----------------------------------------------------------------------------- */
+@media (min-width: 1201px) {
+  .container {
+    width: 1000px;
+  }
+}
